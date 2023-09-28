@@ -72,7 +72,7 @@ def predict_fn(
 
 demo = gr.Interface(fn=predict_fn,
                     inputs=input_list,
-                    outputs=gr.Number(label="Selling Price of the Car in thousands"),
+                    outputs=gr.Number(label="Selling Price of the Car in thousands", info="If you want to get the value in lakhs , just divide it by 100"),
                     title="Car Price Prediction Application")
 
 demo.launch()
