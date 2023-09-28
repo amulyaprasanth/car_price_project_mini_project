@@ -65,14 +65,14 @@ def predict_fn(
         predict_pipeline = PredictPipeline()
         preds = predict_pipeline.predict(data_df)
         logging.info(preds)
-        return round(preds)
+        return round(preds)/100
     except Exception as e:
         raise CustomException(e, sys)
 
 
 demo = gr.Interface(fn=predict_fn,
                     inputs=input_list,
-                    outputs=gr.Number(label="Selling Price of the Car in thousands", info="If you want to get the value in lakhs , just divide it by 100"),
+                    outputs=gr.Number(label="Selling Price of the Car", info="in lakhs"),
                     title="Car Price Prediction Application")
 
 demo.launch()
