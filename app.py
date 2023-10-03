@@ -75,4 +75,4 @@ demo = gr.Interface(fn=predict_fn,
                     outputs=gr.Number(label="Selling Price of the Car", info="in lakhs"),
                     title="Car Price Prediction Application")
 
-demo.launch()
+demo.launch(share = True)
