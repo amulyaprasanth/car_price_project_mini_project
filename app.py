@@ -70,7 +70,7 @@ def predict_fn(
         raise CustomException(e, sys)
 
 description = """
-    <img title="car price prediction" alt="Car image" src="images/cars.jpg" align="center">
+    <img title="car price prediction" alt="Car image" src="https://miro.medium.com/v2/resize:fit:1296/1*kQBj7l-Y1WPZfX9nKIYL1Q.jpeg" align="center">
     <center>This project demonstrates how to use CatBoost to predict the price of used cars. The model was able to achieve an accuracy of over 90% on the test set. This suggests that CatBoost is a promising approach for car price prediction.</center>"""
 demo = gr.Interface(fn=predict_fn,
                     inputs=input_list,
