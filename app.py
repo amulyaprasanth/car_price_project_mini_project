@@ -75,7 +75,7 @@ description = """
 demo = gr.Interface(fn=predict_fn,
                     inputs=input_list,
                     outputs=gr.Number(label="Selling Price of the Car", info="in lakhs"),
-                    title="Car Price Prediction Application",
+                    title="CarValueML: Car Price Prediction Application🚗📈",
                     description=description)
 
 demo.launch(share = True)
